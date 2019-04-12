@@ -1,0 +1,42 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <servlet>
+     <servlet-name>retrive</servlet-name>
+     <servlet-class>hibernate.criteria.test.drivers.CriteriaSerevlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+      <servlet-name>login</servlet-name>
+      <servlet-class>hibernate.criteria.test.drivers.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+      <servlet-name>forget</servlet-name>
+      <servlet-class>hibernate.criteria.test.drivers.forgetPasword</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ByHQL</servlet-name>
+  	<display-name>ByHQL</display-name>
+  	<description></description>
+  	<servlet-class>hibernate.criteria.test.drivers.ByHQL</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+     <servlet-name>retrive</servlet-name>
+     <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>login</servlet-name>
+  	<url-pattern>/loginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>forget</servlet-name>
+  	<url-pattern>/forgetpas</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ByHQL</servlet-name>
+  	<url-pattern>/ByHQL</url-pattern>
+  </servlet-mapping>
+</web-app>

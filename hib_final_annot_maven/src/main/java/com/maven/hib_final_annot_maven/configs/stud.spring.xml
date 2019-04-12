@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+"http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+     
+     <bean id="stud" class="com.maven.hib_final_annot_maven.bean.Student">
+          <property name="id" value="364574215" />
+          <property name="name" value="Prince" />
+          <property name="studing" value="MCA" />
+          <property name="address" value="HYDRABAD" />
+     </bean>
+</beans>

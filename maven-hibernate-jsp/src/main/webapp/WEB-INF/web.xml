@@ -1,0 +1,47 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>Registration</servlet-name>
+  	<display-name>Registration</display-name>
+  	<description></description>
+  	<servlet-class>hibernate_jsp.clients.Registration</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>RetriveRecord</servlet-name>
+  	<display-name>RetriveRecord</display-name>
+  	<description></description>
+  	<servlet-class>hibernate_jsp.clients.RetriveRecord</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>RetriveSingleServlet</servlet-name>
+  	<display-name>RetriveSingleServlet</display-name>
+  	<description></description>
+  	<servlet-class>hibernate_jsp.clients.RetriveSingleServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DeleteServlet</servlet-name>
+  	<display-name>DeleteServlet</display-name>
+  	<description></description>
+  	<servlet-class>hibernate_jsp.clients.DeleteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Registration</servlet-name>
+  	<url-pattern>/Registration</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>RetriveRecord</servlet-name>
+  	<url-pattern>/RetriveRecord</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>RetriveSingleServlet</servlet-name>
+  	<url-pattern>/RetriveSingleServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DeleteServlet</servlet-name>
+  	<url-pattern>/DeleteServlet</url-pattern>
+  </servlet-mapping>
+</web-app>

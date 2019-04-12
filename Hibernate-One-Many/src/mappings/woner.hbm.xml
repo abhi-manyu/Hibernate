@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name="beans.Woner" table="woner_details">
+        <id name="wonerName" />
+        <property name="wonerID" />
+        <property name="wonerPhNo" />
+        <property name="wonerAddress" />  
+        <set name="veichles" cascade="all">
+           <key column="woner_Name" />
+           <one-to-many class="beans.Veichle"/>
+        </set>
+   </class>
+</hibernate-mapping>

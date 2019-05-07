@@ -35,15 +35,18 @@ public class LoginServlet extends HttpServlet
 		String username=request.getParameter("unm");
 		String pass=request.getParameter("pass");
 		
-		Person p=(Person) s.load(Person.class,rol);
-		
-		if(p.getName().equals(username) && p.getPassword().equals(pass))
+		Person p=(Person) s.get(Person.class,rol);
+		if(p!=null)
 		{
-			System.out.println("hyy body u r logged in !!");
+		  if(p.getName().equals(username) && p.getPassword().equals(pass))
+		   {
+			 System.out.println("hyy body u r logged in !!");
+		   }
+		  else {
+			    System.out.println("oops !!! log in attempt failed");
+		     }
 		}
-		else {
-			System.out.println("oops !!! log in attempt failed");
-		}
+		System.out.println("ur record not found plz register first");
 	}
 
 

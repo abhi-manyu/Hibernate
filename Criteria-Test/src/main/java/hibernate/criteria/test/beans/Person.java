@@ -8,7 +8,7 @@ import javax.persistence.Table;
 @Table(name="crTable")
 public class Person
 {
-	@Id
+	@Id()
     private int roll;
     private String name;
     private double marks;

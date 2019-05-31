@@ -11,8 +11,8 @@
         <property name="wonerPhNo" />
         <property name="wonerAddress" />  
         <set name="veichles" cascade="all">
-           <key column="woner_Name" />
-           <one-to-many class="beans.Veichle"/>
+        	<key column="woner_Name" />
+        	<one-to-many class="beans.Veichle"/>
         </set>
    </class>
 </hibernate-mapping>

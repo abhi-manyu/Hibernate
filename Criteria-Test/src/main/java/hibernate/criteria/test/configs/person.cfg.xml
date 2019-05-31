@@ -16,5 +16,6 @@
          <property name="show_sql">true</property>
          
     <mapping class="hibernate.criteria.test.beans.Person" />
+    
     </session-factory>
 </hibernate-configuration>

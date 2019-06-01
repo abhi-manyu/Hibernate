@@ -11,8 +11,8 @@
       
       <tx:annotation-driven transaction-manager="txManager"/>
         
-        <bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-             <property name="dataSource" ref="datasource"/>
+        <bean id="txManager" class="org.springframework.orm.hibernate5.HibernateTransactionManager">
+             <property name="sessionFactory" ref="sf"/>
         </bean>
       
    <bean id="datasource" class="org.apache.commons.dbcp.BasicDataSource">

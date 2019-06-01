@@ -30,6 +30,7 @@ public class StudentDAO {
 	public Student findStudent(int id)
 	{
 		Session s=sessionFactory.openSession();
+		//Session s=sessionFactory.getCurrentSession();
 		Student stud=s.load(Student.class,id);
 		return stud;
 	}

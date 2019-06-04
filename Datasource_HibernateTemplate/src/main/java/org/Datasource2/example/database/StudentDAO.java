@@ -7,23 +7,26 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.springframework.transaction.annotation.Transactional;
 
-public class StudentDAO {
+public class StudentDAO
+{
 
 	private SessionFactory sessionFactory;
 	
-	public void setSessionFactory(SessionFactory sessionFactory) {
+	public void setSessionFactory(SessionFactory sessionFactory)
+	{
 		this.sessionFactory = sessionFactory;
 	}
-	public SessionFactory getSessionFactory() {
+	public SessionFactory getSessionFactory()
+	{
 		return sessionFactory;
 	}
 	
 	public void addStudent(Student stud)
 	{
 		Session s=sessionFactory.openSession();
-		Transaction t=s.beginTransaction();
+		//Transaction t=s.beginTransaction();
 		s.save(stud);
-		t.commit();
+		//t.commit();
 		System.out.println("student added");
 	}
 	

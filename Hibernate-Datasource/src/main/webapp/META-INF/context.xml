@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <Context>
+   <Resource name="jdbc/hibernate"
+             auth="Container"
+             type="javax.sql.DataSource"
+             driverClassname="com.mysql.jdbc.Driver"
+             url="jdbc:mysql://localhost:3306/hibernate"
+             username="root"
+             password="Reset123"
+           
+             maxActive="100"
+             maxIdle="20"
+             minIdle="15"
+             maxWait="10000">
+   
+   </Resource>
+</Context> -->
+
+
+<Resource name="jdbc/hibernate"
+              auth="Container"
+              type="javax.sql.DataSource" />
+              
+              
+              

@@ -27,12 +27,10 @@ public class StudentService
 		this.stdao = stdao;
 	}
     
-    @Transactional
     public void addStudent(Student student)
     {
     	stdao.addStudent(student);
     }
-    @Transactional
     public Student findStudent(int id)
     {
     	return stdao.findStudent(id);

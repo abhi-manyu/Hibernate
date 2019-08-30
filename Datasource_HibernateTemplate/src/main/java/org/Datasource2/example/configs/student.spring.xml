@@ -14,11 +14,6 @@
     <context:component-scan base-package="org.Datasource2.example" />
 
     <tx:annotation-driven/>
-    
-    <bean id="transactionManager"
-        class="org.springframework.orm.hibernate5.HibernateTransactionManager">
-               <property name="sessionFactory" ref="sf" />
-     </bean>
 
 	<bean id="datasource"
 		class="org.apache.commons.dbcp.BasicDataSource">
@@ -43,16 +38,11 @@
 		<property name="hibernateProperties">
 			<props>
 				<prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop>
-				<prop key="hibernate.hbm2ddl.auto">create</prop>
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
 				<prop key="hibernate.show_sql">true</prop>
 			</props>
 		</property>
 	</bean>
-
-	<!-- <bean id="template" class="org.springframework.orm.hibernate5.HibernateTemplate"> 
-		<property name="sessionFactory" ref="sf"></property> <property name="checkWriteOperations" 
-		value="false" /> </bean> -->
-
 
 	<bean id="stdao"
 		class="org.Datasource2.example.database.StudentDAO">

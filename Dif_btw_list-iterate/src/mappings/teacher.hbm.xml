@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+<hibernate-mapping>
+       <class name="classes.Teacher" table="teacher_details">
+          <id name="teach_id" />
+          <property name="teach_name" />
+          <property name="teach_sub" />
+          <property name="teach_age" />
+          </class>
+</hibernate-mapping>

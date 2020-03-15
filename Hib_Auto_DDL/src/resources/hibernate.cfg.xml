@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+	<hibernate-configuration>
+	<session-factory>
+	<!-- this is the datbase properties -->
+	<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+	<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/practice</property>
+	<property name="hibernate.connection.username">root</property>
+	<property name="hibernate.connection.password">Abhi@manyu@12345</property>
+	
+	<!-- here are the internal hibernate comands -->
+	<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+	<property name="hbm2ddl.auto">create</property>
+	
+	<!-- here are the mapping files resides -->
+	<mapping resource="resources/educational.hbm.xml" />
+	<mapping resource="resources/personal.hbm.xml" />
+	
+	
+	</session-factory>
+	</hibernate-configuration>

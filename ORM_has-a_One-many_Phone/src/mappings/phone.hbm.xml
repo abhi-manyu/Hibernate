@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+<hibernate-mapping>
+       <class name="classes.Phones" table="Phones">
+       <id name="ph_name" />
+       <property name="ph_id" />
+       <property name="colour" />
+       <property name="ph_cost" />
+       
+       <set name="sim" cascade="all">
+          <key column="ph_name" />
+          <one-to-many class="classes.Sim" />
+       </set>
+</class>
+
+</hibernate-mapping>

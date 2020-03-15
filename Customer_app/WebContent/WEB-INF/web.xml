@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>Customer_app</display-name>
+  <welcome-file-list>
+    <welcome-file>signup.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>signup</servlet-name>
+    <servlet-class>tablecreate.Table_Creation</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>signin</servlet-name>
+    <servlet-class>LoginServlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>forgetpass</servlet-name>
+    <servlet-class>forgotpass.ForgotPass</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>signup</servlet-name>
+    <url-pattern>/Table_Creation</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>signin</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>forgetpass</servlet-name>
+    <url-pattern>/ForgotPass</url-pattern>
+  </servlet-mapping>
+</web-app>

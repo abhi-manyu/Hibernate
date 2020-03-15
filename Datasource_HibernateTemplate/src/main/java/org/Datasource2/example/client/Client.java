@@ -13,7 +13,7 @@ public class Client
 	new ClassPathXmlApplicationContext("org/Datasource2/example/configs/student.spring.xml");
 	
 	StudentService stdsserv=(StudentService) ap.getBean("stdserv");
-	Student st=new Student(222,"abhimanyu","bangalore");
+	Student st=new Student(333,"arabinda","bhadrak");
 	stdsserv.addStudent(st);
 	
 	/*Student std=stdsserv.findStudent(222);

@@ -24,16 +24,15 @@ public class StudentDAO
 	public void addStudent(Student stud)
 	{
 		Session s=sessionFactory.openSession();
-		//Transaction t=s.beginTransaction();
+		Transaction t=s.beginTransaction();
 		s.save(stud);
-		//t.commit();
+		t.commit();
 		System.out.println("student added");
 	}
 	
 	public Student findStudent(int id)
 	{
 		Session s=sessionFactory.openSession();
-		//Session s=sessionFactory.getCurrentSession();
 		Student stud=s.load(Student.class,id);
 		return stud;
 	}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+<hibernate-mapping>
+  <class name="classes.Student" table="student">
+      <id name="id" />
+      <property name="name" />
+      <property name="age" />
+      <property name="address" />
+      
+      <joined-subclass name="classes.ScienceStudent" table="science_student">
+           <key column="id" />
+           <property name="unique_Sub" />
+           <property name="marks" />
+      </joined-subclass>
+      <joined-subclass name="classes.CommerceStudent" table="commerce_student">
+           <key column="id" />
+           <property name="unique_Sub" />
+           <property name="college" />
+      </joined-subclass>
+      <joined-subclass name="classes.ArtsStudent" table="arts_student">
+           <key column="id" />
+           <property name="unique_Sub" />
+           <property name="teacher_name" />
+      </joined-subclass>
+
+</class>
+
+</hibernate-mapping>

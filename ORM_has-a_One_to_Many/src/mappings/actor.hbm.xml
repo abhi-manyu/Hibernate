@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="classes.Actor" table="actor_deatails">
+<id name="act_name" />
+<property name="act_id" />
+
+  <set name="movies" lazy="true">
+  <key column="act_name" />
+  <one-to-many class="classes.Movies"/>
+  </set>
+  
+</class>
+</hibernate-mapping>

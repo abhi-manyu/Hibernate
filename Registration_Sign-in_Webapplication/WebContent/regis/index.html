@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+	background-image: url("black.jpg");
+	background-size: cover;
+}
+input[type=text],input[type=password] {
+	height: 1cm;
+	width: 50%;
+	border-radius: 10px;
+	font-size: 25px;
+	
+}
+form {
+	text-align: center;
+}
+input {
+	margin: 10px;
+}
+input:FOCUS
+{
+   background-color: #e6fff2;
+}
+a{
+ color: yellow;
+ text-decoration: none;
+}
+p{
+  text-align: center;
+}
+a:HOVER{
+ color: #00ffff;
+ font-size: 30px;
+ 
+}
+input[type=submit],[type=reset]{
+	width: 3cm;
+	height: 1cm;
+	background-color:#3366ff;
+	cursor: pointer;
+	border: 1px solid yellow; 
+	font-family: cursive;
+	font-size: 17px;
+	border-radius: 10px;
+}
+input[type=submit]:HOVER
+{
+    background-color: #00b300;
+}
+input[type=reset]:HOVER
+{
+background-color: #ff0000;
+}
+span {
+	font-size: 20px;
+	font-family: cursive;
+	color: yellow;
+}
+</style>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form>
+<span>User name:</span><input type="text" name="unm"/><br>
+<span>Password:</span><input type="password" name="pass"/><br>
+<input type="submit" value="log in" />
+<input type="reset" value="clear" />
+</form>
+<p><a href="forget_pass/forget.html" >oops!!<img src="oops.jpg" height="20px" width="20px"/>i didn't remember my password</a><br>
+<a href="regis/regist.html">i don't have any account</a></p>
+</body>
+</html>

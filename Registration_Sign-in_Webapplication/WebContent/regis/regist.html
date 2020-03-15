@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+   body {
+	background-image: url("regist.jpg");
+	opacity: 50;
+}
+h1 {
+	text-align: center;
+	color: #66e0ff;
+}
+input{
+    margin: 10px;
+}
+h2 {
+	text-align: center;
+	color: red;
+	background-color: #4d94ff;
+}
+input[type=text],input[type=email],input[type=tel]
+{
+	width: 7cm;
+	height:30px;
+	font-size: 20px;
+	font-family: cursive;
+	border-radius: 8px;
+}
+input[type=text]:HOVER,input[type=email]:HOVER,input[type=tel]:HOVER
+{
+   
+}
+input[type=password]
+{
+   width: 5cm;
+	height:30px;
+	font-size: 20px;
+}
+span {
+	color: red;
+	font-family: cursive;
+	font-size: 25px;
+	background-color: yellow;
+}
+input[type=submit],input[type=reset]
+{
+   width: 3cm;
+    height: 1cm;
+    font-size: 20px;
+    font-family: cursive;
+    border-radius: 15px;
+    background-color: #ff6666;
+}
+input[type=submit]:HOVER,input[type=reset]:HOVER
+{
+   background-color: #ff0000;
+   cursor: pointer;
+}
+form {
+	text-align: center;
+}
+</style>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Welcome to the possibilities of future </h1>
+<h2>Create ur new Account</h2>
+<form action="./Table_Creation">
+<span>First Name:</span><input type="text" name="fnam"/>
+<span>Last Name:</span><input type="text" name="lnam"/><br>
+<span>Email:</span><input type="email" name="mail"/>
+<span>Ph.No:</span><input type="tel" name="tlp"/><br>
+<span>Password:</span><input type="text" name="pas"/>
+<span>Confirm Password:</span><input type="password" name="cpas"/><br>
+<input type="submit" value="sign up"/>
+<input type="reset" value="reset"/>
+</form>
+</body>
+</html>

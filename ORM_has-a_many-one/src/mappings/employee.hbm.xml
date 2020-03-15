@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ 
+<hibernate-mapping>
+     <class name="classes.Employee" table="employee" >
+         <id name="emp_id" />
+         <property name="emp_name" />
+         <property name="mail" />
+         <property name="emp_birth_date" />
+         <many-to-one name="dept" class="classes.Department" cascade="all">
+             <column name="dept_name" />
+         </many-to-one>
+     </class>
+
+</hibernate-mapping>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+<hibernate-mapping>
+<class name="classses.Company" table="company">
+    <id name="reg_no" />
+    <property name="name" />
+    <union-subclass name="classses.Software_Company" table="Software">
+       <property name="salary" />
+       <property name="working_hr" />
+       </union-subclass>
+    <union-subclass name="classses.Hardware_Company" table="Hardware">
+        <property name="hike" />
+        <property name="no_of_holydays" />
+        </union-subclass>
+    <union-subclass name="classses.Reserch_Developement" table="reserch_and_Developement">
+        <property name="dept_name" />
+        <property name="position" />
+        </union-subclass>
+
+</class>
+</hibernate-mapping>

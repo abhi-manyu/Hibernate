@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+<hibernate-mapping>
+  <class name="classes.Account" table="account_details">
+     <id name="acc_id" />
+     <property name="acc_type" />
+     <property name="acc_created_dt" />
+     <property name="acc_sal" />
+  </class> 
+</hibernate-mapping>

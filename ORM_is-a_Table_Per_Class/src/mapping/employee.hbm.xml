@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+     <class name="classes.Employee" table="Employee">
+       <id name="id" />
+       <discriminator column="Emp_Type"/>
+       <property name="name" />
+       <property name="mail" />
+       <property name="salary" />
+     <subclass name="classes.Soft" discriminator-value="software_employee">
+        <property name="tool" />
+     </subclass>
+     <subclass name="classes.Hard" discriminator-value="hardware_Employee">
+        <property name="wh" />
+     </subclass>
+     <subclass name="classes.Admin" discriminator-value="admmin">
+        <property name="branchname" />
+     </subclass>
+     </class>
+
+</hibernate-mapping>
